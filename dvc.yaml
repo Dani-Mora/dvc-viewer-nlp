@@ -4,3 +4,10 @@ stages:
       -d raw
     outs:
     - raw
+  data-split:
+    cmd: python data_split.py
+    deps:
+    - data_split.py
+    - raw/train.csv
+    outs:
+    - data

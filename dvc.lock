@@ -4,3 +4,13 @@ data-download:
   outs:
   - path: raw
     md5: fe35f77a115791e82129d337de5eda94.dir
+data-split:
+  cmd: python data_split.py
+  deps:
+  - path: data_split.py
+    md5: 4f934f1756c0d3c5b864690502f03ab2
+  - path: raw/train.csv
+    md5: f147942c91d00d754503775341d13682
+  outs:
+  - path: data
+    md5: 4fb56f3016ff616d6ac42518fe62fa26.dir
