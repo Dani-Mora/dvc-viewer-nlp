@@ -18,18 +18,18 @@ training:
   cmd: papermill bert_fine_tuning_training.ipynb bert_fine_tuning_training.ipynb
   deps:
   - path: bert_fine_tuning_training.ipynb
-    md5: 85c70b877fe5c542af7eae75644ba087
+    md5: ebeb1e4ba6a9615d000ec71dbd78fab5
   - path: data
     md5: 4fb56f3016ff616d6ac42518fe62fa26.dir
   params:
     params.yaml:
-      batch_size: 64
+      batch_size: 32
       lr: 1e-05
       n_epochs: 5
   outs:
   - path: test_metrics.json
-    md5: 3aedaa781bbf8f96872c26865d16578e
+    md5: 4846dce6193c56be843aa160e8617ff9
   - path: train_metrics.json
-    md5: 5a82c651878022fa9c661c0a8b85991b
+    md5: f5d8967ed5758345aac546e7fe372810
   - path: val_metrics.json
-    md5: c6a1a9d0b37ccccbe5e5310b30cbd2bf
+    md5: cbab99c8e20e17ba53be404519efcec0
