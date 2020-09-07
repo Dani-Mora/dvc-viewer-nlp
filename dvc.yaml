@@ -1,0 +1,6 @@
+stages:
+  data-download:
+    cmd: kaggle competitions download -c nlp-getting-started && unzip nlp-getting-started.zip
+      -d raw
+    outs:
+    - raw

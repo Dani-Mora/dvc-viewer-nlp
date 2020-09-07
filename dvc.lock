@@ -1,0 +1,6 @@
+data-download:
+  cmd: kaggle competitions download -c nlp-getting-started && unzip nlp-getting-started.zip
+    -d raw
+  outs:
+  - path: raw
+    md5: fe35f77a115791e82129d337de5eda94.dir
