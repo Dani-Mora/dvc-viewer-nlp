@@ -11,3 +11,15 @@ stages:
     - raw/train.csv
     outs:
     - data
+  training:
+    cmd: papermill tf_idf_training.ipynb tf_idf_training.ipynb
+    metrics:
+    - test_metrics.json:
+        cache: false
+    - train_metrics.json:
+        cache: false
+    - val_metrics.json:
+        cache: false
+    deps:
+    - data
+    - tf_idf_training.ipynb

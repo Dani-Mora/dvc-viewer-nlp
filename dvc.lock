@@ -14,3 +14,17 @@ data-split:
   outs:
   - path: data
     md5: 4fb56f3016ff616d6ac42518fe62fa26.dir
+training:
+  cmd: papermill tf_idf_training.ipynb tf_idf_training.ipynb
+  deps:
+  - path: data
+    md5: 4fb56f3016ff616d6ac42518fe62fa26.dir
+  - path: tf_idf_training.ipynb
+    md5: 2cb9ab286c89c8c17d2685e5875730dd
+  outs:
+  - path: test_metrics.json
+    md5: ed9d71879c918e3b75025e0cbd618375
+  - path: train_metrics.json
+    md5: 29909fbf3148a4a2f7c8860bad42d24d
+  - path: val_metrics.json
+    md5: 974ccb5ec15f431bf3b568677d3bf5aa
